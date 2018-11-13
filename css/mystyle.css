@@ -133,6 +133,7 @@ h2{
 }
 .navbar-default .navbar-nav>li>a{
     color: #fff;
+    font-size: 1.2em;
 }
 .navbar-default .navbar-nav>li>a:hover{
     color: #fff;
