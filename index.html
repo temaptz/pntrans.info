@@ -99,18 +99,20 @@
                 между предприятиями и структурными подразделениями Октябрьской железной дороги.</p>-->
             <div class="colomn">
                 <div class="colomn-header">
-                Мы предоставляем гарантированные услуги по своевременной доставке груза потребителям.
-                Вам не придётся искать вагоны и перевозчиков, вам нужно всего лишь обратиться к нам!
-                Мы выполняем функции диспетчера по формированию сводного заказа от большого числа предприятий,
-                а так же планирования передвижений грузов в круглосуточном режиме.
+                <!--Мы предоставляем гарантированные услуги по своевременной доставке груза потребителям.-->
+                <!--Вам не придётся искать вагоны и перевозчиков, вам нужно всего лишь обратиться к нам!-->
+                <!--Мы выполняем функции диспетчера по формированию сводного заказа от большого числа предприятий,-->
+                <!--а так же планирования передвижений грузов в круглосуточном режиме.-->
+                    Компания предоставляет транспортно- логистические услуги по гарантированной и своевременной доставке грузов железнодорожным транспортом. Сотрудники компании проработают и предложат оптимальную логистическую схему, предоставления подвижного состава, оплату железнодорожного транспорта, при необходимости, возьмут на себя выполнение сопутствующих услуг.
                 </div>
                 <div class="polosa"></div>
             </div>
             <div class="colomn">
                 <div class="colomn-header">
-                Благодаря нашей работе,
-                вы, клиенты, получаете транспортные услуги оптимальной цены и качества. Более того, мы помогаем вам,
-                при необходимости,  отстаивать интересы ваших предприятий за пределами республики.
+                <!--Благодаря нашей работе,-->
+                <!--вы, клиенты, получаете транспортные услуги оптимальной цены и качества. Более того, мы помогаем вам,-->
+                <!--при необходимости,  отстаивать интересы ваших предприятий за пределами республики.-->
+                    Услуги компании осуществляются на основе гарантированного выполнения, соблюдения сроков и оптимальной стоимости, отвечая за конечный результат.
                 </div>
                 <div class="polosa"></div>
             </div>
@@ -153,7 +155,7 @@
         <h2 style="color: red;">Оперативность</h2>
       </div>
       <div class="col-md-4">
-        <h2 style="color: red;">Стоимость</h2>
+        <h2 style="color: red;">Ответственность</h2>
       </div>
     </div>
 </section>
@@ -198,8 +200,8 @@
                 полувагонов и вагонов-самосвалов (думпкаров) частных собственников
                 под перевозки щебня с предприятий Республики Карелия на выгодных условиях. </p>
             <p>Предложения принимаются по почте</p>
-            <h3 class="red"><a href="mailto:ponomarev@pntrans.info">ponomarev@pntrans.info</a></h3>
-            <h3>Пономарев Антон Олегович</h3>
+            <h3 class="red"><a href="mailto:ponomarev@pntrans.info">patrakeeva@pntrans.info</a></h3>
+            <h3>Патракеева Елена Вячеславовна</h3>
         </div>
         <div class="col-md-6">
             <img src="img/pntrans2.jpg" class="img-thumbnail" alt="Железнодорожные грузоперевозки">
@@ -239,18 +241,26 @@
 <section id="contact2" class=" container content-section" data-ng-controller="MyCtrl1">
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3 text-center">
-            <h2>Воспользуйтесь нашими услугами</h2>
-            <p>ООО "Промнерудтранс"</p>
+            <h2>Предложение по сотрудничеству</h2>
+            <p>Обратиться в ООО "Промнерудтранс"</p>
         </div>
         <div class="contact2 col-md-12">
             <form class="col-md-6 left col-md-offset-3">
                 <div class="form-group label-floating">
-                    <label for="inputName" class="control-label">Имя</label>
+                    <label for="inputName" class="control-label">Наименование компании*</label>
+                    <input type="text" data-ng-model="formInfo.company" class="form-control" id="inputCompany">
+                </div>
+                <div class="form-group label-floating">
+                    <label for="inputName" class="control-label">Контактное лицо*</label>
                     <input type="text" data-ng-model="formInfo.name" class="form-control" id="inputName">
                 </div>
                 <div class="form-group label-floating">
-                    <label for="inputContact" class="control-label">Email или телефон</label>
-                    <input type="text" data-ng-model="formInfo.email" class="form-control" id="inputContact">
+                    <label for="inputEmail" class="control-label">Email*</label>
+                    <input type="text" data-ng-model="formInfo.email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group label-floating">
+                    <label for="inputPhone" class="control-label">Телефон*</label>
+                    <input type="text" data-ng-model="formInfo.email" class="form-control" id="inputPhone">
                 </div>
                 <div class="form-group label-floating">
                     <label for="inputText3" class="control-label">Сообщение</label>
@@ -258,7 +268,7 @@
                 </div>
                 <div class="text-center">
                     <button type="submit"
-                            data-ng-disabled="!formInfo.name || !formInfo.email || !formInfo.text"
+                            data-ng-disabled="!formInfo.company || !formInfo.name || !formInfo.email || !formInfo.phone || !formInfo.text"
                             data-ng-click="sendEmail()"
                             class="btn btn-default">Отправить</button>
                 </div>
@@ -512,11 +522,11 @@
     </br>
     </br>
     <div class="row">
-        <div class="employee">
-            <p>Заместитель генерального директора по логистике</p>
-            <h4>Пономарев Антон Олегович</h4>
-            <a href="mailto:ponomarev@pntrans.info">ponomarev@pntrans.info</a>
-        </div>
+        <!--<div class="employee">-->
+            <!--<p>Заместитель генерального директора по логистике</p>-->
+            <!--<h4>Пономарев Антон Олегович</h4>-->
+            <!--<a href="mailto:ponomarev@pntrans.info">ponomarev@pntrans.info</a>-->
+        <!--</div>-->
         <div class="employee">
             <p>Ведущий менеджер коммерческого отдела</p>
             <h4>Патракеева Елена Вячеславовна</h4>
@@ -533,11 +543,11 @@
             <h4>Жданова Ольга Игоревна</h4>
             <a href="mailto:zhdanova@pntrans.info">zhdanova@pntrans.info</a>
         </div>
-        <!--<div class="employee">-->
-            <!--<p>Юрисконсульт</p>-->
-            <!--<h4>Маннинен Оксана Викторовна</h4>-->
-            <!--<a href="mailto:manninen@pntrans.info">manninen@pntrans.info</a>-->
-        <!--</div>-->
+        <div class="employee">
+            <p>Юрисконсульт</p>
+            <h4>Маннинен Оксана Викторовна</h4>
+            <a href="mailto:manninen@pntrans.info">manninen@pntrans.info</a>
+        </div>
     </div>
 </section>
 

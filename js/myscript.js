@@ -86,19 +86,19 @@ app.controller('MyCtrl1', ['$scope', 'myService', function($scope, myService) {
         $scope.emailRequired = '';
         $scope.telRequired = '';
 
-        if (!$scope.formInfo.name) {
-            $scope.nameRequired = 'Пожалуйста, введите имя';
-        }
+        // if (!$scope.formInfo.name) {
+        //     $scope.nameRequired = 'Пожалуйста, введите имя';
+        // }
+        //
+        // if (!$scope.formInfo.email) {
+        //     $scope.emailRequired = 'Пожалуйста, введите Email';
+        // }
+        //
+        // if (!$scope.formInfo.text) {
+        //     $scope.telRequired = 'Пожалуйста, введите номер телефона';
+        // }
 
-        if (!$scope.formInfo.email) {
-            $scope.emailRequired = 'Пожалуйста, введите Email';
-        }
-
-        if (!$scope.formInfo.text) {
-            $scope.telRequired = 'Пожалуйста, введите номер телефона';
-        }
-
-        myService.sendEmailService($scope.formInfo.name, $scope.formInfo.email, $scope.formInfo.text);
+        myService.sendEmailService($scope.formInfo.company, $scope.formInfo.name, $scope.formInfo.email, $scope.formInfo.phone, $scope.formInfo.text);
     };
 }]);
 
@@ -106,11 +106,13 @@ app.factory('myService', function($http){
     var factory = {};
 
     //Указать причину пропуска
-    factory.sendEmailService = function(name, email, text){
+    factory.sendEmailService = function(company, name, email, phone, text){
         console.log(222);
         $http.post('/feedback/sendMail.php',{
+            company: company,
             name: name,
             email: email,
+            phone: phone,
             text: text
         }).then(function () {
             alert("Ваше сообщение отправлено!");
