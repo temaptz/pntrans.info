@@ -17,12 +17,12 @@ function closeNewsContent(id){
 $('.right-header').hover(function(){
     $('.right-header').addClass('sr-only');
     $('.right-header').removeClass('col-md-3');
-    $('.right-header').addClass('col-md-6');
+    $('.right-header').addClass('col-md-7');
     $('.right-header').removeClass('sr-only');
 
     $('.left-header').addClass('sr-only');
     $('.left-header').removeClass('col-md-9');
-    $('.left-header').addClass('col-md-6');
+    $('.left-header').addClass('col-md-5');
     $('.left-header').removeClass('sr-only');
 
     $('#header').removeClass('intro-body');
@@ -32,12 +32,12 @@ $('.right-header').hover(function(){
     $('.intro-text').addClass('sr-only');*/
 }, function(){
     $('.right-header').addClass('sr-only');
-    $('.right-header').removeClass('col-md-6');
+    $('.right-header').removeClass('col-md-7');
     $('.right-header').addClass('col-md-3');
     $('.right-header').removeClass('sr-only');
 
     $('.left-header').addClass('sr-only');
-    $('.left-header').removeClass('col-md-6');
+    $('.left-header').removeClass('col-md-5');
     $('.left-header').addClass('col-md-9');
     $('.left-header').removeClass('sr-only');
 

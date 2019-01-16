@@ -85,6 +85,9 @@ h2{
     justify-content: center;
     height: 330px;
 }
+.right-header.col-md-7 {
+    padding-left: 60px;
+}
 .intro-body{
     position: absolute;
     background: url(/img/left.jpg);
@@ -221,8 +224,16 @@ h2.header-second{
     float:left;
     margin-left:2%;
 }
-.contact2{
-    margin-top:40px;
+#contact2 {
+    position: relative;
+}
+#contact-anchor {
+    position: absolute;
+    top: -100px;
+    visibility: hidden;
+}
+.contact2 {
+    margin-top: 40px;
 }
 .left{
     padding:35px 20px;
@@ -383,4 +394,16 @@ h2.header-second{
 }
 img{
     max-width: 100%;
+}
+
+.btn-feedback {
+    background-color: #ff5b5b;
+    color: #fff !important;
+    padding: 15px 50px;
+}
+.btn-feedback:hover {
+    background-color: #ff3844 !important;
+}
+.btn-feedback:focus {
+    background-color: #ff5b5b !important;
 }
