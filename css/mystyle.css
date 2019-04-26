@@ -407,3 +407,8 @@ img{
 .btn-feedback:focus {
     background-color: #ff5b5b !important;
 }
+
+.action table tr td {
+    text-align: center;
+    font-size: 150%;
+}
